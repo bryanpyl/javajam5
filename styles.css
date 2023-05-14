@@ -1,0 +1,9 @@
+.card-img-top {
+    height: 200px; /* set the desired height for the image */
+    object-fit: cover; /* ensure the image fills the container */
+  }
+
+.blue-border {
+    border: 1px dashed blue;
+    color: blue;
+  }

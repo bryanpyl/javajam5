@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Apple Tours</title>
+    <!-- Q1(iii) add a new CSS class -->
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <div id="main">
+        <h1>Hello <span id="there">there</span></h1>
+        <h1>Welcome to Apple!</h1>
+        <p>We provide the tours to these countries:</p>
+        <ul>
+            <li>France</li>
+            <li>Spain</li>
+            <li>Thailand</li>
+        </ul>
+        <a href="book.html" class="special"><button type="button">Book Tour</button></a>
+    </div>
+
+    <script>
+
+        //Q1(i) 
+        const listItems = document.querySelectorAll('li');
+        listItems.forEach(item => {
+            console.log(item.textContent);
+        });
+
+        //Q1(ii)
+        const specialLink = document.querySelector('a.special');
+        specialLink.addEventListener('mouseover', () => {
+            alert('Book a tour');
+        });
+
+        //Q1(iii) toggle a new class
+        //The toggle() class = Toggle between adding and removing a class name from a selected element with JavaScript.
+        const spanThere = document.querySelector('#there');
+        spanThere.classList.toggle('blue-border');
+
+
+    </script>
+</body>
+
+</html>
